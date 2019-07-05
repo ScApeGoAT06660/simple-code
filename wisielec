@@ -1,0 +1,287 @@
+#include <iostream>
+#include <windows.h>
+#include <conio.h>
+
+using namespace std;
+
+int main() 
+{
+	char wyraz[5];
+	char proba[5];
+	int i, szanse;
+	char wybor, wybor2;
+	string wygrana;
+	
+	wyraz[0]='k';
+	wyraz[1]='a';
+	wyraz[2]='j';
+	wyraz[3]='a';
+	wyraz[4]='k';
+	
+  for(;;)
+	{
+	
+	cout << "WISIELEC" << endl;
+	cout << "1. Start \n2. Wyjdz" << endl;
+	cout << "Wybor: ";
+	cin >> wybor;
+	system("cls");
+	
+	Sleep(500);
+	
+	if(wybor == '1')
+	{
+		
+		cout << "Odgadnij haslo :)" << endl;
+		cout << "INF(!) Wybierz odpowiednia opcje by grac." << endl;
+		cout << "Masz 5 szans na odgadniecie jednej litery!" << endl;
+		getch();
+		system("cls");
+		
+		do
+		{
+		
+			cout << proba[0] << " " << proba[1] << " "<< proba[2] << " "<< proba[3] << " "<< proba[4] << " " << endl;
+			cout << "1 2 3 4 5" << endl;
+			cout << endl;
+			Sleep(500);
+					
+			cout << "1. Wpisz litere 1 \n2. Wpisz litere 2 \n3. Wpisz litere 3\n4. Wpisz litere 4 \n5. Wpisz litere 5 \n6. Wpisz powstale haslo \n7. Wyjdz" << endl;
+			cout << endl;
+			cout << "Wybor: ";
+			cin >> wybor2;
+			system("cls");
+			
+			if(wybor2 == '1')
+			{
+				
+				for(i=1;i<5;i++)
+				{
+				
+					cout << proba[0] << " " << proba[1] << " "<< proba[2] << " "<< proba[3] << " "<< proba[4] << " " << endl;
+					cout << "1 2 3 4 5" << endl;
+					cout << endl;
+					
+					cout << "Zgadnij litere: ";
+					cin >> proba[0];
+					system("cls");
+					
+					if(wyraz[0] == proba[0])
+					{
+						cout << proba[0] << " " << proba[1] << " "<< proba[2] << " "<< proba[3] << " "<< proba[4] << " " << endl;
+						cout << "1 2 3 4 5" << endl;
+						cout << "Brawo! To ta literka :)" << endl;
+						getch();
+						system ("cls");
+						break;
+				
+				}
+					
+					else
+					{
+						
+						cout << "Pudlo! Sprobuj jeszcze raz." << endl;
+						proba[0] = '-';
+						getch();
+						system("cls");
+					
+					}
+			
+				}
+				
+			}
+			
+			
+			if(wybor2 == '2')
+			{
+				for(i=1;i<5;i++)
+				{
+				
+					cout << proba[0] << " " << proba[1] << " "<< proba[2] << " "<< proba[3] << " "<< proba[4] << " " << endl;
+					cout << "1 2 3 4 5" << endl;
+					cout << endl;
+					
+					cout << "Zgadnij litere: ";
+					cin >> proba[1];
+					system("cls");
+					
+					if(wyraz[1] == proba[1])
+					{
+						cout << proba[0] << " " << proba[1] << " "<< proba[2] << " "<< proba[3] << " "<< proba[4] << " " << endl;
+						cout << "1 2 3 4 5" << endl;
+						cout << "Brawo! To ta literka :)" << endl;
+						getch();
+						system ("cls");
+						break;
+					}
+					else
+					{
+						cout << "Pudlo! Sprobuj jeszcze raz." << endl;
+						proba[1] = '-';
+						getch();
+						system("cls");
+					}
+		
+				}
+				
+			}
+			
+			
+			if(wybor2 == '3')
+			{
+				for(i=1;i<5;i++)
+				{
+				
+					cout << proba[0] << " " << proba[1] << " "<< proba[2] << " "<< proba[3] << " "<< proba[4] << " " << endl;
+					cout << "1 2 3 4 5" << endl;
+					cout << endl;
+					
+					cout << "Zgadnij litere: ";
+					cin >> proba[2];
+					system("cls");
+					
+					if(wyraz[2] == proba[2])
+					{
+						cout << proba[0] << " " << proba[1] << " "<< proba[2] << " "<< proba[3] << " "<< proba[4] << " " << endl;
+						cout << "1 2 3 4 5" << endl;
+						cout << "Brawo! To ta literka :)" << endl;
+						getch();
+						system ("cls");
+						break;
+					}
+					else
+					{
+						cout << "Pudlo! Sprobuj jeszcze raz." << endl;
+						proba[2] = '-';
+						getch();
+						system("cls");
+					}
+		
+				}
+				
+			}
+			
+			if(wybor2 == '4')
+			{
+				for(i=1;i<5;i++)
+				{
+				
+					cout << proba[0] << " " << proba[1] << " "<< proba[2] << " "<< proba[3] << " "<< proba[4] << " " << endl;
+					cout << "1 2 3 4 5" << endl;
+					cout << endl;
+					
+					cout << "Zgadnij litere: ";
+					cin >> proba[3];
+					system("cls");
+					
+					if(wyraz[3] == proba[3])
+					{
+						cout << proba[0] << " " << proba[1] << " "<< proba[2] << " "<< proba[3] << " "<< proba[4] << " " << endl;
+						cout << "1 2 3 4 5" << endl;
+						cout << "Brawo! To ta literka :)" << endl;
+						getch();
+						system ("cls");
+						break;
+					}
+					else
+					{
+						cout << "Pudlo! Sprobuj jeszcze raz." << endl;
+						proba[3] = '-';
+						getch();
+						system("cls");
+					}
+		
+				}
+				
+			}
+		
+		
+			if(wybor2 == '5')
+			{
+				for(i=1;i<5;i++)
+				{
+				
+					cout << proba[0] << " " << proba[1] << " "<< proba[2] << " "<< proba[3] << " "<< proba[4] << " " << endl;
+					cout << "1 2 3 4 5" << endl;
+					cout << endl;
+					
+					cout << "Zgadnij litere: ";
+					cin >> proba[4];
+					system("cls");
+					
+					if(wyraz[4] == proba[4])
+					{
+						cout << proba[0] << " " << proba[1] << " "<< proba[2] << " "<< proba[3] << " "<< proba[4] << " " << endl;
+						cout << "1 2 3 4 5" << endl;
+						cout << "Brawo! To ta literka :)" << endl;
+						getch();
+						system ("cls");
+						break;
+					}
+					else
+					{
+						cout << "Pudlo! Sprobuj jeszcze raz." << endl;
+						proba[4] = '-';
+						getch();
+						system("cls");
+					}
+		
+				}
+				
+			}	
+			
+			if(wybor2 == '6')
+			{
+				 do
+				 {
+					cout << "Wpisz haslo: ";
+					cin >> wygrana;
+					
+					if(wygrana == "kajak")
+					{
+						cout << "Zgadles haslo!" << endl;
+							proba[0]='k';
+							proba[1]='a';
+							proba[2]='j';
+							proba[3]='a';
+							proba[4]='k';
+						break;
+					}
+					else
+					{
+						cout << "To nie to :(" << endl;
+						getch();
+						system("cls");
+					}
+				}while(wybor2 == '8');
+				
+			}
+				if(szanse == 5)
+					{
+						cout << "Koniec szans." << endl;
+						getch ();
+						break;
+					}
+			
+		}while(wybor2 != '7');
+	
+	
+		
+	}
+	else if (wybor == '2')
+	{
+		break;
+	}
+	else if (wybor != '1' && wybor != '2')
+	{
+		cout << "Nie ma takiej opcji." << endl;
+		getch();
+		system ("cls");
+	}
+}
+	
+	cout << "Dziekuje za gre c:" << endl;
+	
+	
+	return 0;
+}
